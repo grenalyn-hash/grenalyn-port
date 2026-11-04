@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume | GRENALYN</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #e5f7fd;
+            color: #102334;
+            font-family: Georgia, "Times New Roman", serif;
+            min-height: 100vh;
+        }
+
+        /* HEADER */
+        header {
+            width: 100%;
+            min-height: 75px;
+            background: linear-gradient(135deg, #91c7fa, #a9d9f8);
+            border-bottom: 2px solid #b6dcfa;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 6%;
+            box-shadow: 0 3px 12px rgba(21, 85, 140, 0.10);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-circle {
+            width: 38px;
+            height: 38px;
+            background-color: #15558c;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .logo h2 {
+            font-family: Arial, sans-serif;
+            font-size: 17px;
+            color: #102d49;
+        }
+
+        /* RESUME SECTION */
+        .resume-section {
+            width: 100%;
+            min-height: calc(100vh - 75px);
+            padding: 40px 20px 60px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .resume-heading {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .resume-heading h1 {
+            font-family: Arial, sans-serif;
+            font-size: 32px;
+            color: #15558c;
+            margin-bottom: 8px;
+        }
+
+        .resume-heading p {
+            font-size: 14px;
+            color: #536c80;
+        }
+
+        /* BUTTONS */
+        .resume-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+
+        .resume-btn {
+            display: inline-block;
+            padding: 11px 22px;
+            border-radius: 7px;
+            background: linear-gradient(135deg, #91d4f4, #70bde9);
+            color: #103451;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+            font-weight: bold;
+            border: 1px solid #80c7ef;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        .resume-btn:hover {
+            background: #15558c;
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        /* RESUME IMAGE */
+        .resume-container {
+            width: 100%;
+            max-width: 850px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(21, 85, 140, 0.15);
+            border: 1px solid #b6dcfa;
+        }
+
+        .resume-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: contain;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <div class="logo-circle">GR</div>
+            <h2>My Portfolio</h2>
+        </div>
+    </header>
+
+    <section class="resume-section">
+
+        <div class="resume-heading">
+            <h1>My Resume</h1>
+            <p>View my resume and learn more about my qualifications.</p>
+        </div>
+
+        <div class="resume-buttons">
+            <a href="index.html" class="resume-btn">← Back to Portfolio</a>
+        </div>
+
+        <div class="resume-container">
+            <img src="resume.jpg"
+                 alt="My Resume"
+                 id="resumeImage">
+        </div>
+
+    </section>
+</body>
+</html>
