@@ -1,7 +1,3 @@
-
-/* ==============================
-   GENERAL SETTINGS
-============================== */
 * {
     margin: 0;
     padding: 0;
@@ -27,8 +23,8 @@ img {
 }
 
 a {
-    transition: all 0.3s ease;
     text-decoration: none;
+    transition: all 0.3s ease;
 }
 
 button,
@@ -37,13 +33,10 @@ textarea {
     font-family: inherit;
 }
 
-/* ==============================
-   HEADER / NAVIGATION
-============================== */
 header {
     width: 100%;
     min-height: 75px;
-    background: linear-gradient(135deg, #91c7fa, #a9d9f8);
+    background: linear-gradient(135deg, #78aaf7, #69c5f4);
     border-bottom: 2px solid #b6dcfa;
     display: flex;
     align-items: center;
@@ -53,7 +46,12 @@ header {
     box-shadow: 0 3px 12px rgba(21, 85, 140, 0.10);
     position: relative;
     z-index: 100;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
+
 
 .logo {
     display: flex;
@@ -113,6 +111,8 @@ nav a::after {
     transition: width 0.3s ease;
 }
 
+
+
 nav a:hover::after {
     width: 100%;
 }
@@ -121,13 +121,11 @@ nav a:hover {
     color: #15558c;
 }
 
-/* ==============================
-   HOME SECTION
-============================== */
 .home {
     width: 100%;
     min-height: 410px;
     background-color: #e5f7fd;
+    border-bottom: 3px solid #b6dcfa;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -222,13 +220,11 @@ nav a:hover {
     border: 4px solid #e5f7fd;
 }
 
-/* ==============================
-   ABOUT SECTION
-============================== */
 .about-section {
     width: 100%;
     min-height: 310px;
-    background: linear-gradient(135deg, #78aaf7, #69c5f4);
+    background: linear-gradient(135deg, #78aaf7, #69c5f4);;
+    border-bottom: 3px solid #b6dcfa;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -254,7 +250,7 @@ nav a:hover {
     font-family: Arial, sans-serif;
     font-size: 32px;
     color: #102d49;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     line-height: 1.3;
 }
 
@@ -326,9 +322,6 @@ nav a:hover {
     color: #43596c;
 }
 
-/* ==============================
-   SKILLS SECTION
-============================== */
 .skills-section {
     width: 100%;
     min-height: 260px;
@@ -348,7 +341,7 @@ nav a:hover {
 .skills-description {
     max-width: 600px;
     margin: 0 auto;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.8;
     color: #536c80;
 }
@@ -408,13 +401,11 @@ nav a:hover {
     object-fit: contain;
 }
 
-/* ==============================
-   PROJECTS SECTION
-============================== */
 .projects-section {
     width: 100%;
     min-height: 300px;
-    background: linear-gradient(135deg, #64b5f6, #78c5f5);
+    background:linear-gradient(135deg, #78aaf7, #69c5f4);;
+    border-bottom: 3px solid #b6dcfa;
     padding: 50px 7% 60px;
     text-align: center;
 }
@@ -444,7 +435,7 @@ nav a:hover {
     background: #e5f7fd;
     padding: 16px;
     border-radius: 14px;
-    border: 1px solid rgba(255,255,255,0.7);
+    border: 1px solid #53b6d0;
     box-shadow: 0 7px 18px rgba(21, 85, 140, 0.14);
     transition: all 0.3s ease;
 }
@@ -460,6 +451,7 @@ nav a:hover {
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 15px;
+
 }
 
 .project-card h3 {
@@ -476,15 +468,11 @@ nav a:hover {
     margin-top: 8px;
 }
 
-
-/* ==============================
-   GOALS SECTION
-============================== */
-
 .goals {
     width: 100%;
     min-height: 300px;
-    background-color: #def3fc;
+    background: #e5f7fd;
+    border-bottom: 3px solid #b6dcfa;
     padding: 50px 7%;
     text-align: center;
 }
@@ -504,7 +492,7 @@ nav a:hover {
 }
 
 .section-description {
-    font-size: 13px;
+    font-size: 18px;
     line-height: 1.7;
     color: #536c80;
     margin-bottom: 22px;
@@ -523,7 +511,7 @@ nav a:hover {
     max-width: 250px;
     min-width: 0;
     text-align: center;
-    background-color: #e5f7fd;
+     background: linear-gradient(135deg, #80d8e6, #53b6d0);
     padding: 15px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(21, 85, 140, 0.09);
@@ -577,15 +565,11 @@ nav a:hover {
     margin-top: 12px;
 }
 
-
-/* ==============================
-   ACHIEVEMENTS SECTION
-============================== */
-
 .achievements {
     width: 100%;
     min-height: 300px;
     background: linear-gradient(135deg, #78aaf7, #69c5f4);
+    border-bottom: 3px solid #b6dcfa;
     padding: 50px 7%;
     text-align: center;
 }
@@ -615,8 +599,8 @@ nav a:hover {
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(21, 85, 140, 0.12);
     overflow: hidden;
+    transition: all 0.3s ease;
 }
-
 
 .achievement-item:hover {
     transform: translateY(-5px);
@@ -637,10 +621,9 @@ nav a:hover {
     font-family: Arial, sans-serif;
     font-size: 13px;
     line-height: 1.5;
-    color: #15558c;
+    color: #163d5c;;
     margin-top: 12px;
 }
-
 
 .contact-footer {
     width: 100%;
@@ -665,8 +648,6 @@ nav a:hover {
     min-width: 0;
     padding: 10px 22px;
 }
-
-
 
 .connect {
     text-align: center;
@@ -725,8 +706,6 @@ nav a:hover {
     transform: translateY(-5px);
 }
 
-
-
 .contact-info {
     border-right: 1px solid rgba(255,255,255,0.25);
     display: flex;
@@ -773,8 +752,6 @@ nav a:hover {
     color: #e5f7fd;
     overflow-wrap: anywhere;
 }
-
-/* GET IN TOUCH FORM */
 
 .get-in-touch {
     padding-left: 15px;
@@ -848,8 +825,6 @@ nav a:hover {
     box-shadow: 0 0 0 3px rgba(145,212,244,0.15);
 }
 
-/* SEND BUTTON */
-
 .send-button {
     display: block;
     margin-left: auto;
@@ -874,8 +849,6 @@ nav a:hover {
     box-shadow: 0 5px 12px rgba(0,0,0,0.15);
 }
 
-
-
 .footer-bottom {
     max-width: 1250px;
     margin: auto;
@@ -895,7 +868,7 @@ nav a:hover {
 .footer-bottom a {
     color: white;
     font-size: 12px;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .footer-bottom a:hover {
@@ -905,7 +878,57 @@ nav a:hover {
 #contacts {
     scroll-margin-top: 20px;
 }
+/* SOCIAL MEDIA ICONS */
+.social-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 9px;
+    margin-left: 0;
+}
 
-html {
-    scroll-behavior: smooth;
+/* GITHUB */
+.github-link {
+    display: flex;
+    align-items: center;
+}
+
+.github-link img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    transition: 0.3s ease;
+}
+
+/* FACEBOOK */
+.facebook-link {
+    display: flex;
+    align-items: center;
+}
+
+.facebook-link img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    transition: 0.3s ease;
+}
+
+/* INSTAGRAM */
+.instagram-link {
+    display: flex;
+    align-items: center;
+}
+
+.instagram-link img {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+    transition: 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.github-link img:hover,
+.facebook-link img:hover,
+.instagram-link img:hover {
+    transform: scale(1.15);
 }
