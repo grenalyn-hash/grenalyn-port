@@ -123,7 +123,7 @@ nav a:hover {
 
 .home {
     width: 100%;
-    min-height: 410px;
+    min-height: 500px;
     background-color: #e5f7fd;
     border-bottom: 3px solid #b6dcfa;
     display: flex;
@@ -131,6 +131,7 @@ nav a:hover {
     justify-content: space-between;
     gap: 60px;
     padding: 65px 9%;
+
 }
 
 .home-content {
@@ -222,7 +223,7 @@ nav a:hover {
 
 .about-section {
     width: 100%;
-    min-height: 310px;
+    min-height: 500px;
     background: linear-gradient(135deg, #78aaf7, #69c5f4);;
     border-bottom: 3px solid #b6dcfa;
     display: flex;
@@ -324,7 +325,7 @@ nav a:hover {
 
 .skills-section {
     width: 100%;
-    min-height: 260px;
+    min-height: 500px;
     padding: 50px 7% 55px;
     text-align: center;
     background-color: #e5f7fd;
@@ -382,7 +383,6 @@ nav a:hover {
     object-fit: contain;
 }
 
-/* PROBLEM-SOLVING LOGO */
 .problem-solving {
     flex-direction: column;
     gap: 5px;
@@ -403,7 +403,7 @@ nav a:hover {
 
 .projects-section {
     width: 100%;
-    min-height: 300px;
+    min-height: 500px;
     background:linear-gradient(135deg, #78aaf7, #69c5f4);;
     border-bottom: 3px solid #b6dcfa;
     padding: 50px 7% 60px;
@@ -470,7 +470,7 @@ nav a:hover {
 
 .goals {
     width: 100%;
-    min-height: 300px;
+    min-height: 500px;
     background: #e5f7fd;
     border-bottom: 3px solid #b6dcfa;
     padding: 50px 7%;
@@ -567,7 +567,7 @@ nav a:hover {
 
 .achievements {
     width: 100%;
-    min-height: 300px;
+    min-height: 500px;
     background: linear-gradient(135deg, #78aaf7, #69c5f4);
     border-bottom: 3px solid #b6dcfa;
     padding: 50px 7%;
@@ -631,6 +631,7 @@ nav a:hover {
     color: white;
     padding: 35px 7% 0;
     scroll-margin-top: 20px;
+    min-height: 500px;
 }
 
 .footer-container {
@@ -878,7 +879,7 @@ nav a:hover {
 #contacts {
     scroll-margin-top: 20px;
 }
-/* SOCIAL MEDIA ICONS */
+
 .social-links {
     display: flex;
     align-items: center;
@@ -886,8 +887,6 @@ nav a:hover {
     gap: 9px;
     margin-left: 0;
 }
-
-/* GITHUB */
 .github-link {
     display: flex;
     align-items: center;
@@ -900,7 +899,7 @@ nav a:hover {
     transition: 0.3s ease;
 }
 
-/* FACEBOOK */
+
 .facebook-link {
     display: flex;
     align-items: center;
@@ -913,7 +912,6 @@ nav a:hover {
     transition: 0.3s ease;
 }
 
-/* INSTAGRAM */
 .instagram-link {
     display: flex;
     align-items: center;
@@ -926,7 +924,6 @@ nav a:hover {
     transition: 0.3s ease;
 }
 
-/* HOVER EFFECT */
 .github-link img:hover,
 .facebook-link img:hover,
 .instagram-link img:hover {
